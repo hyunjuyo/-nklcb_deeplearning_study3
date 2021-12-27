@@ -82,7 +82,7 @@
 \- public : 6.326<br/>
 \- private : 6.419
 
-#### 추가 셋팅 3. Normalize transformation(Imagenet 데이터 기준 산출된 평균, 표준편차 사용)
+#### 추가 셋팅 3. Normalize transformation(Imagenet 데이터셋 기준 산출된 평균, 표준편차 사용)
 
 * 내용<br/>
 \- Imagenet 데이터셋 기준으로 산출된 평균 및 표준편차를 사용하여 테스트 진행<br/>
