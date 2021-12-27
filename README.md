@@ -93,4 +93,33 @@
 \- public : 6.278<br/>
 \- private : 6.502
 
+-----
+### 5) 현 모델 기준 epochs 셋팅 및 테스트(4차) --> "DL_project1_v1.1c_유현준.ipynb"
 
+#### 1. epochs 15
+
+* 내용<br/>
+\- 오히려 epochs 10일 때 보다 모델의 성능이 떨어진 것으로 확인됨
+
+* 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
+\- public : 6.498<br/>
+\- private : 6.566
+
+#### 2. epochs 20
+
+* 내용<br/>
+\- epochs 15는 물론이고, epochs 10일 때 보다 모델의 성능이 향상된 것으로 확인됨
+
+* 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
+\- public : 6.067<br/>
+\- private : 6.347
+
+#### 3. epochs 19
+
+* 내용<br/>
+\- 20번의 epoch 중, validation 데이터 기준 성능이 가장 좋게 나타났던 model state를 불러와 테스트 진행<br/>
+\- 지금까지의 테스트 중, 가장 좋은 성능을 나타냄 => public 기준 최초로 5점대 진입
+
+* 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
+\- public : 5.820<br/>
+\- private : 6.040
