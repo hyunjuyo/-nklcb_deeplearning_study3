@@ -123,3 +123,26 @@
 * 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
 \- public : 5.820<br/>
 \- private : 6.040
+
+-----
+### 6) learning rate 조정, epochs 셋팅 및 테스트(5차) --> "DL_project1_v1.3c_유현준.ipynb"
+
+#### 1. lr 0.00003, epochs 30
+
+* 내용<br/>
+\- 기대와 달리 오히려 기존 대비 성능이 저하된 것으로 확인됨
+
+* 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
+\- public : 6.323<br/>
+\- private : 6.510
+
+#### 2. lr 0.00003, epochs 28
+
+* 내용<br/>
+\- 30번의 epoch 중, validation 데이터 기준 성능이 가장 좋게 나타났던 model state를 불러와 테스트 진행<br/>
+\- public 기준 다시 5점대에 진입하긴 했으나, 기존 모델의 성능 대비 향상되지는 않은 것으로 확인됨
+
+* 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
+\- public : 5.873<br/>
+\- private : 6.080
+
