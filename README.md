@@ -176,8 +176,8 @@
 ### 1) LeNet 기반 모델 학습 진행 --> "DL_project1_featuremap_v1.1c__유현준.ipynb"
 
 * 기본적인 LeNet 구조를 활용해 CNN이 이미지를 이해하는 방식에 대해 살펴보고자 함<br/>
-![image](https://user-images.githubusercontent.com/76440511/147557433-7c273e9b-989d-4299-8496-414ee0183f09.png)
-\- 첫번째 레이어에서 Feature Map을 추출해 각 8개 채널별 시각화 및 비교 예정
+![image](https://user-images.githubusercontent.com/76440511/147557433-7c273e9b-989d-4299-8496-414ee0183f09.png)<br/>
+\- 첫번째 레이어에서 Feature Map을 뽑아낸 뒤, 추출된 8개 채널별로 시각화 및 비교 예정
 
 * LeNet 기반 단계별 학습 진행
 \- 학습 단계는 앞서 MobileNet에 적용했던 기준과 동일하게 적용함<br/>
