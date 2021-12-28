@@ -132,6 +132,7 @@
 #### 1. lr 0.00003, epochs 30
 
 * 내용<br/>
+\- 기존 20번의 epoch 결과 model state를 불러온 뒤, 조정한 learning rate 기준으로 추가 10 epoch 진행함<br/>
 \- 기대와 달리 오히려 기존 대비 성능이 저하된 것으로 확인됨
 
 * 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
@@ -151,6 +152,7 @@
 #### 3. lr 0.00001, epochs 40
 
 * 내용<br/>
+\- 기존 30번의 epoch 결과 model state를 불러온 뒤, 조정한 learning rate 기준으로 추가 10 epoch 진행함<br/>
 \- 
 
 * 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
