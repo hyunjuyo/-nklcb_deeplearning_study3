@@ -1,14 +1,16 @@
 # [ DL_Project1 ] 생육 기간 예측 프로젝트
-* 목적 : 한 쌍의 작물 이미지를 입력받아 해당 작물의 생육 기간을 예측하는 모델 개발
-* 모델 평가 기준 : RMSE(Root Mean Squared Error)
+* 목적 및 진행 방향<br/>
+\- Part 1. 한 쌍의 작물 이미지를 입력받아 해당 작물의 생육 기간을 예측하는 모델 개발 및 성능 테스트<br/>
+\- Part 2. Feature Map 시각화를 통해 Convolutional Layer가 이미지를 이해하는 방식에 대해 살펴보기
 
 ## 데이터 정보 및 학습 진행 방식
 * DACON의 "생육 기간 예측 경진대회"에서 제공된 데이터 활용
 * 2개 작물(청경채, 적상추)에 대한 생육 기간 경과일자별 이미지 데이터 저장<br/>
 \- 총 753개(청경채 353개, 적상추 400개)
-* 작물별 이미지 2장씩을 다양하게 조합하여 2장의 이미지간 경과일 기준 학습 및 테스트 진행
+* 작물별 이미지 2장씩을 다양하게 조합하여 2장의 이미지간 경과일 기준 학습 및 모델 성능 테스트 진행
+* 모델 평가 기준 : RMSE(Root Mean Squared Error)
 
-## 주요 진행 경과
+## Part 1. MobileNet 기반 성능 향상 테스트
 
 ### 1) Baseline구성 및 데이터셋 생성 --> "DL_project1_v0.3c_유현준.ipynb"
 
@@ -146,3 +148,25 @@
 \- public : 5.873<br/>
 \- private : 6.080
 
+#### 3. lr 0.00001, epochs 40
+
+* 내용<br/>
+\- 
+
+* 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
+\- public : <br/>
+\- private : 
+
+#### 4. lr 0.00001, epochs 32
+
+* 내용<br/>
+\- 40번의 epoch 중, validation 데이터 기준 성능이 가장 좋게 나타났던 model state를 불러와 테스트 진행<br/>
+\- 
+
+* 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
+\- public : <br/>
+\- private : 
+
+-----
+
+## Part 2. Feature Map 시각화
