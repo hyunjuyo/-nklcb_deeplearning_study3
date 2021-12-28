@@ -179,13 +179,13 @@
 ![image](https://user-images.githubusercontent.com/76440511/147557433-7c273e9b-989d-4299-8496-414ee0183f09.png)<br/>
 \- 첫번째 레이어에서 Feature Map을 뽑아낸 뒤, 추출된 8개 채널별로 시각화 및 비교 예정
 
-* LeNet 기반 단계별 학습 진행
+* 단계별 학습 진행<br/>
 \- 학습 단계는 앞서 MobileNet에 적용했던 기준과 동일하게 적용함<br/>
-  - lr 0.00005 기준으로 20 epochs 진행<br/>
-  - lr 0.00003 기준으로 추가 10 epochs 진행 => 누적 30 epochs<br/>
-  - lr 0.00001 기준으로 추가 10 epochs 진행 => 누적 40 epochs<br/>
-\- 모델의 학습상태 및 성능수준에 따라 동일한 이미지에 대한 Feature Map이 어떻게 달라지는지 비교해보고자 함
+&nbsp;&nbsp;&nbsp;&nbsp;\- lr 0.00005 기준으로 20 epochs 진행<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;\- lr 0.00003 기준으로 추가 10 epochs 진행 => 누적 30 epochs<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;\- lr 0.00001 기준으로 추가 10 epochs 진행 => 누적 40 epochs<br/>
+\- 학습된 모델의 상태 및 성능수준에 따라 동일한 이미지에 대해 Feature Map이 어떻게 달라지는지 비교해보고자 함
 
-* 모델의 최종 성능이 중요한 Part는 아니므로, 절대적인 모델의 성능 수치보다는 학습 초반과 후반의 상대적인 성능 변화 수치를 참조해 살펴보고자 함
+* 모델의 최종 성능이 중요한 Part는 아니므로, 절대적인 모델의 성능 수치보다는 학습 초반과 후반의 상대적인 성능 변화 수치를 참조하며 진행하고자 함
 
 ### 2) 학습된 LeNet 모델별 Feature Map 시각화 및 비교 --> "DL_project1_featuremap_v2c__유현준.ipynb"
