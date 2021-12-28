@@ -31,7 +31,7 @@
 
 * 주요 셋팅 현황<br/>
 \- 모델 : mobilenet_v2 활용<br/>
-\- learning rate : 0.0005<br/>
+\- learning rate : 0.00005<br/>
 \- epochs : 10<br/>
 \- batch_size : 64
 
