@@ -189,3 +189,12 @@
 * 모델의 최종 성능이 중요한 Part는 아니므로, 절대적인 모델의 성능 수치보다는 학습 초반과 후반의 상대적인 성능 변화 수치를 참조하며 진행하고자 함
 
 ### 2) 학습된 LeNet 모델별 Feature Map 시각화 및 비교 --> "DL_project1_featuremap_v2c__유현준.ipynb"
+
+* 첫번째 epoch 시점의 모델 기준 Feature Map 확인<br/>
+\- 해당 모델의 VALIDATION_LOSS MAE : 5.205 수준
+![image](https://user-images.githubusercontent.com/76440511/147561302-d33776c2-7238-47e3-a0c3-d4fe1093e8c6.png)
+
+* 10번째 epoch 시점의 모델 기준 Feature Map 확인<br/>
+\- 해당 모델의 VALIDATION_LOSS MAE : 3.469 수준
+
+
