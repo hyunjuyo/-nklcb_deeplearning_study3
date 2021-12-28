@@ -1,7 +1,8 @@
 # [ DL_Project1 ] 생육 기간 예측 프로젝트
-* 목적 및 진행 방향<br/>
-\- Part 1. 한 쌍의 작물 이미지를 입력받아 해당 작물의 생육 기간을 예측하는 모델 개발 및 성능 테스트<br/>
-\- Part 2. Feature Map 시각화를 통해 Convolutional Layer가 이미지를 이해하는 방식에 대해 살펴보기
+
+## 목적 및 진행 방향<br/>
+&nbsp;&nbsp;\- **Part 1)** 한 쌍의 작물 이미지를 입력받아 해당 작물의 생육 기간을 예측하는 모델 개발 및 성능 테스트<br/>
+&nbsp;&nbsp;\- **Part 2)** Feature Map 시각화를 통해 Convolutional Layer가 이미지를 이해하는 방식에 대해 살펴보기
 
 ## 데이터 정보 및 학습 진행 방식
 * DACON의 "생육 기간 예측 경진대회"에서 제공된 데이터 활용
@@ -9,8 +10,11 @@
 \- 총 753개(청경채 353개, 적상추 400개)
 * 작물별 이미지 2장씩을 다양하게 조합하여 2장의 이미지간 경과일 기준 학습 및 모델 성능 테스트 진행
 * 모델 평가 기준 : RMSE(Root Mean Squared Error)
+<br/>
 
-## Part 1. MobileNet 기반 성능 향상 테스트
+# Part 1) MobileNet 기반 모델 성능 향상 테스트
+
+## 주요 진행 경과
 
 ### 1) Baseline구성 및 데이터셋 생성 --> "DL_project1_v0.3c_유현준.ipynb"
 
@@ -168,16 +172,15 @@
 * 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
 \- public : <br/>
 \- private : 
+<br/>
 
------
-
-## Part 2. Feature Map 시각화
+# Part 2) Feature Map 시각화
 
 ### 1) LeNet 기반 모델 학습 진행 --> "DL_project1_featuremap_v1.1c__유현준.ipynb"
 
 * 기본적인 LeNet 구조를 활용해 CNN이 이미지를 이해하는 방식에 대해 살펴보고자 함<br/>
-![image](https://user-images.githubusercontent.com/76440511/147557433-7c273e9b-989d-4299-8496-414ee0183f09.png)<br/>
-\- 첫번째 레이어에서 Feature Map을 뽑아낸 뒤, 추출된 8개 채널별로 시각화 및 비교 예정
+\- 아래와 같은 구조의 첫번째 레이어에서 Feature Map을 뽑아낸 뒤, 추출된 8개 채널별로 시각화 및 비교 예정
+![image](https://user-images.githubusercontent.com/76440511/147557433-7c273e9b-989d-4299-8496-414ee0183f09.png)
 
 * 단계별 학습 진행<br/>
 \- 학습 단계는 앞서 MobileNet에 적용했던 기준과 동일하게 적용함<br/>
@@ -188,6 +191,7 @@
 
 * 모델의 최종 성능이 중요한 Part는 아니므로, 절대적인 모델의 성능 수치보다는 학습 초반과 후반의 상대적인 성능 변화 수치를 참조하며 진행하고자 함
 
+-----
 ### 2) 학습된 LeNet 모델별 Feature Map 시각화 및 비교 --> "DL_project1_featuremap_v2c__유현준.ipynb"
 
 * 첫번째 epoch 시점의 모델 기준 Feature Map 확인<br/>
@@ -196,5 +200,15 @@
 
 * 10번째 epoch 시점의 모델 기준 Feature Map 확인<br/>
 \- 해당 모델의 VALIDATION_LOSS MAE : 3.469 수준
+![image](https://user-images.githubusercontent.com/76440511/147570265-79ca2caa-abf9-4841-b255-1dd1efbecad4.png)
 
+* 39번째 epoch 시점의 모델 기준 Feature Map 확인<br/>
+\- 해당 모델의 VALIDATION_LOSS MAE : 2.290 수준
+![image](https://user-images.githubusercontent.com/76440511/147570382-8f4e24c3-a217-432c-bca0-bdd4ee3d0282.png)
+
+* Feature Map 1개 채널 확대하여 모델간 비교
+
+|첫번째 epoch 시점의 모델 기준|39번째 epoch 시점의 모델 기준|
+|-|-|
+|![image](https://user-images.githubusercontent.com/76440511/147570819-7bc4e5da-e807-4247-a4d2-f3a1643baeac.png)|![image](https://user-images.githubusercontent.com/76440511/147570853-9982940b-e2f9-4e6b-acf8-e1a51fd85a05.png)|
 
