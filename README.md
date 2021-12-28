@@ -14,7 +14,7 @@
 
 * baseline 구성 및 기본 셋팅<br/>
 \- 모델 : mobilenet_v2 활용<br/>
-\- learning rate : 0.0005
+\- learning rate : 0.00005
 * 데이터 전처리<br/>
 \- 이미지 사이즈가 크므로 효과적인 학습 진행을 위해 이미지 Resize
 * 데이터셋 생성<br/>
