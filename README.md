@@ -157,21 +157,21 @@
 
 * 내용<br/>
 \- 기존 30번의 epoch 결과 model state를 불러온 뒤, 조정한 learning rate 기준으로 추가 10 epoch 진행함<br/>
-\- 
+\- 기대와는 달리 성능이 오히려 저하된 것으로 나타남
 
 * 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
-\- public : <br/>
-\- private : 
+\- public : 6.407<br/>
+\- private : 6.640
 
 #### 4. lr 0.00001, epochs 32
 
 * 내용<br/>
 \- 40번의 epoch 중, validation 데이터 기준 성능이 가장 좋게 나타났던 model state를 불러와 테스트 진행<br/>
-\- 
+\- 마찬가지로 기존 대비 성능이 좋지 못한 것으로 확인됨 => 본 모델 기준으로 약 20 epochs 이후에는 과적합이 나타난 것으로 추정됨
 
 * 테스트 결과 SCORE (DACON 제출 후 산출된 점수 기준)<br/>
-\- public : <br/>
-\- private : 
+\- public : 6.247<br/>
+\- private : 6.454
 <br/>
 
 # Part 2) Feature Map 시각화
