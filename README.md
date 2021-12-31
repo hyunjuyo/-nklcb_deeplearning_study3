@@ -2,7 +2,7 @@
 
 ## 목적 및 진행 방향<br/>
 &nbsp;&nbsp;\- **Part 1)** 한 쌍의 작물 이미지를 입력받아 해당 작물의 생육 기간을 예측하는 모델 개발 및 성능 테스트<br/>
-&nbsp;&nbsp;\- **Part 2)** 학습된 모델 기반 Feature Map 시각화를 통해 Convolutional Layer가 이미지를 이해하는 방식에 대해 살펴보기
+&nbsp;&nbsp;\- **Part 2)** LeNet 기반 Feature Map 시각화를 통해 Convolutional Layer가 이미지를 이해하는 방식에 대해 살펴보기
 
 ## 데이터 정보 및 학습 진행 방식
 * DACON의 "생육 기간 예측 경진대회"에서 제공된 데이터 활용
