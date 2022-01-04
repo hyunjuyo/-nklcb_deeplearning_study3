@@ -2,7 +2,7 @@
 
 ## 목적 및 진행 방향
 &nbsp;&nbsp;\- **Part 1)** 한 쌍의 작물 이미지를 입력받아 해당 작물의 생육 기간을 예측하는 모델 개발 및 성능 테스트<br/>
-&nbsp;&nbsp;\- **Part 2)** LeNet 기반 Feature Map 시각화를 통해 Convolutional Layer가 이미지를 이해하는 방식에 대해 살펴보기
+&nbsp;&nbsp;\- **Part 2)** LeNet 기반 Feature Map 시각화를 통해 Convolutional Layer가 이미지를 이해하는 방식에 대해 깊이 있게 살펴보기
 
 ## 프로젝트 기간
 * 2021년 12월 20일(월) ~ 2021년 12월 29일(수)
